@@ -1,0 +1,58 @@
+theme: hugo-theme-hinode
+baseURL: https://hinode-demo.markdumay.org/
+canonifyURLs: no
+title: Hinode
+author: Mark Dumay
+copyright: Copyright © 2022 Mark Dumay.
+paginate: 9
+enableRobotsTXT: yes
+languageCode: en-us
+enableInlineShortcodes: yes
+ignoreErrors: error-remote-getjson
+enableEmoji: yes
+defaultContentLanguage: en
+disableLanguages: nl
+mainSections:
+  - blog
+  - projects
+taxonomies:
+  tag: tags
+privacy:
+  instagram:
+    disabled: no
+    simple: yes
+  twitter:
+    disabled: no
+    enableDNT: yes
+    simple: yes
+  vimeo:
+    disabled: no
+    simple: yes
+  youtube:
+    disabled: no
+    privacyEnhanced: yes
+services:
+  instagram:
+    disableInlineCSS: yes
+  twitter:
+    disableInlineCSS: yes
+outputFormats:
+  XML:
+    isHtml: no
+    isPlainText: no
+    mediaType: application/xml
+    name: xml
+    noUgly: yes
+    permalinkable: no
+module:
+  hugoVersion:
+    extended: yes
+    max: ''
+    min: 0.81.0
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: node_modules/flexsearch
+      target: assets/js/vendor/flexsearch
